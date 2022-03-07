@@ -1,6 +1,9 @@
 ﻿using ApprovalWorkflow.Abstraction;
+using ApprovalWorkflow.HostedServices;
 using ApprovalWorkflow.Providers;
+using ApprovalWorkflow.Runtime;
 using ApprovalWorkflow.Services;
+using ApprovalWorkflow.StartupTasks;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace ApprovalWorkflow.Extensions
@@ -13,6 +16,9 @@ namespace ApprovalWorkflow.Extensions
             services.AddSingleton<IApprovalWorkflowFactory, ApprovalWorkflowFactory>();
             services.AddSingleton<IUserResolverProvider, UserResolverProvider>();
             services.AddTransient<IApprovalWorkflowService, ApprovalWorkflowService>();
+            services.AddScoped<IStartupTask, DatabaseMigrationStartupTask>();
+            services.AddScoped<IStartupRunner, StartupRunner>();
+            services.AddHostedService<StartupHostedService>();
 
             return services;
         }
