@@ -9,7 +9,7 @@ namespace ApprovalWorkflow.Configuration
     {
         public void Configure(EntityTypeBuilder<ApprovalHistory> builder)
         {
-            throw new NotImplementedException();
+            builder.HasKey(property => property.Id);
         }
     }
 }

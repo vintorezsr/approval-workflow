@@ -1,4 +1,4 @@
-﻿namespace ApprovalWorkflow.Abstraction
+﻿namespace ApprovalWorkflow.Abstractions
 {
     public interface IUserResolver
     {

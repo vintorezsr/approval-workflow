@@ -1,4 +1,4 @@
-﻿namespace ApprovalWorkflow.Abstraction
+﻿namespace ApprovalWorkflow.Abstractions
 {
     public abstract class UserResolverBase : IUserResolver
     {

@@ -1,4 +1,4 @@
-﻿using ApprovalWorkflow.Abstraction;
+﻿using ApprovalWorkflow.Abstractions;
 using ApprovalWorkflow.HostedServices;
 using ApprovalWorkflow.Providers;
 using ApprovalWorkflow.Runtime;

@@ -1,4 +1,4 @@
-﻿using ApprovalWorkflow.Abstraction;
+﻿using ApprovalWorkflow.Abstractions;
 using System.Collections.Concurrent;
 
 namespace ApprovalWorkflow.Providers

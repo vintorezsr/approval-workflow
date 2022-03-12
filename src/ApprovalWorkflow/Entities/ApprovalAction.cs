@@ -1,6 +1,4 @@
-﻿using ApprovalWorkflow.Abstraction;
-
-namespace ApprovalWorkflow.Entities
+﻿namespace ApprovalWorkflow.Entities
 {
     public enum ApprovalAction
     {

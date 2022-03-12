@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ApprovalWorkflow.Abstraction
+namespace ApprovalWorkflow.Abstractions
 {
-    public interface IUser : IEntity
+    public interface IRole : IEntity
     {
     }
 }

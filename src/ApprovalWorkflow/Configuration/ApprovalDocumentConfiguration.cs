@@ -9,7 +9,14 @@ namespace ApprovalWorkflow.Configuration
     {
         public void Configure(EntityTypeBuilder<ApprovalInstance> builder)
         {
-            throw new NotImplementedException();
+            builder.HasKey(property => property.Id);
+            builder.Property(property => property.InstanceNumber)
+                .IsRequired()
+                .HasMaxLength(150);
+            builder.Property(property => property.Status)
+                .IsRequired();
+            builder.Property(property => property.Activities)
+                .IsRequired();
         }
     }
 }

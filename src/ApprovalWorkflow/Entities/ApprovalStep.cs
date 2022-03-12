@@ -1,4 +1,4 @@
-﻿using ApprovalWorkflow.Abstraction;
+﻿using ApprovalWorkflow.Abstractions;
 
 namespace ApprovalWorkflow.Entities
 {

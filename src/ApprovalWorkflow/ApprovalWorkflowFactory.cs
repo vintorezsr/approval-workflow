@@ -1,4 +1,4 @@
-﻿using ApprovalWorkflow.Abstraction;
+﻿using ApprovalWorkflow.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.Linq;

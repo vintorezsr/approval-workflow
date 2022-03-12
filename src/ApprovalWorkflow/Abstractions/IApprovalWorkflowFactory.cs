@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ApprovalWorkflow.Abstraction
+namespace ApprovalWorkflow.Abstractions
 {
-    public interface IEntity
+    public interface IApprovalWorkflowFactory
     {
-        Guid Id { get; set; }
     }
 }

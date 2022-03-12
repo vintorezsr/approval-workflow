@@ -1,4 +1,4 @@
-﻿using ApprovalWorkflow.Abstraction;
+﻿using ApprovalWorkflow.Abstractions;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace ApprovalWorkflow.Runtime

@@ -1,7 +1,10 @@
-﻿namespace ApprovalWorkflow.Entities
+﻿using ApprovalWorkflow.Abstractions;
+
+namespace ApprovalWorkflow.Entities
 {
-    public class ApprovalHistory
+    public class ApprovalHistory : IEntity
     {
+        public Guid Id { get; set; }
         public Guid UserId { get; set; }
         public ApprovalAction Action { get; set; }
         public string? Notes { get; set; }
